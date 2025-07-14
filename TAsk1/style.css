@@ -1,0 +1,78 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset and Body Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container Style */
+.container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+/* Heading */
+.container h1 {
+  margin-bottom: 20px;
+  color: #0077b6;
+}
+
+/* Input Box */
+input[type="text"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #0077b6;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #023e8a;
+  background-color: #f1faff;
+}
+
+/* Get Weather Button */
+button {
+  background-color: #023e8a;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0077b6;
+  transform: scale(1.05);
+}
+
+/* Weather Result */
+#weatherResult {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #222;
+}
